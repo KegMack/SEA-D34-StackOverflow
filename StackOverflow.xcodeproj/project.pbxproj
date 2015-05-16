@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE73B7AE1B026C90000C5AE7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE73B7AD1B026C90000C5AE7 /* LoginViewController.m */; };
+		CE73B7B41B026D69000C5AE7 /* OAuthWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE73B7B31B026D69000C5AE7 /* OAuthWebViewController.m */; };
+		CE73B7B71B02705E000C5AE7 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = CE73B7B61B02705E000C5AE7 /* Constants.m */; };
+		CE73B7BA1B02CFC0000C5AE7 /* StackOverflowService.m in Sources */ = {isa = PBXBuildFile; fileRef = CE73B7B91B02CFC0000C5AE7 /* StackOverflowService.m */; };
+		CE73B7BF1B02EB33000C5AE7 /* JSONStackoverflowParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CE73B7BE1B02EB33000C5AE7 /* JSONStackoverflowParser.m */; };
+		CE73B7C21B02EDAD000C5AE7 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = CE73B7C11B02EDAD000C5AE7 /* Question.m */; };
+		CE73B7C41B02EE7E000C5AE7 /* QuestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE73B7C31B02EE7E000C5AE7 /* QuestionCell.xib */; };
+		CE73B7C71B02F033000C5AE7 /* QuestionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE73B7C61B02F033000C5AE7 /* QuestionTableViewCell.m */; };
+		CE73B7CA1B03370D000C5AE7 /* ImageResizer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE73B7C91B03370D000C5AE7 /* ImageResizer.m */; };
+		CE75EE681B01CBA90083CAA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE75EE671B01CBA90083CAA8 /* main.m */; };
+		CE75EE6B1B01CBA90083CAA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE75EE6A1B01CBA90083CAA8 /* AppDelegate.m */; };
+		CE75EE711B01CBA90083CAA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE75EE6F1B01CBA90083CAA8 /* Main.storyboard */; };
+		CE75EE731B01CBA90083CAA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE75EE721B01CBA90083CAA8 /* Images.xcassets */; };
+		CE75EE761B01CBA90083CAA8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE75EE741B01CBA90083CAA8 /* LaunchScreen.xib */; };
+		CE75EE821B01CBA90083CAA8 /* StackOverflowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE75EE811B01CBA90083CAA8 /* StackOverflowTests.m */; };
+		CE75EE8D1B01CC100083CAA8 /* MainMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE75EE8C1B01CC100083CAA8 /* MainMenuTableViewController.m */; };
+		CE75EE921B01CD120083CAA8 /* MenuContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE75EE911B01CD120083CAA8 /* MenuContainerViewController.m */; };
+		CE75EE951B01D0620083CAA8 /* MyQuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE75EE941B01D0620083CAA8 /* MyQuestionsViewController.m */; };
+		CE75EE981B01D0750083CAA8 /* SearchQuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE75EE971B01D0750083CAA8 /* SearchQuestionsViewController.m */; };
+		CE7B6C141B0471BB000D29A2 /* MyProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7B6C131B0471BB000D29A2 /* MyProfileViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CE7B6C171B04741D000D29A2 /* StackOverflowProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7B6C161B04741D000D29A2 /* StackOverflowProfile.m */; };
+		CEDCF91E1B0570EF003C3F1F /* burgerButton@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEDCF91D1B0570EF003C3F1F /* burgerButton@2x.jpg */; };
+		DE83EE3B529459D8357F3686 /* libPods-StackOverflow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5EB86A0EFB10BF32674E63 /* libPods-StackOverflow.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE75EE7C1B01CBA90083CAA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE75EE5A1B01CBA80083CAA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE75EE611B01CBA90083CAA8;
+			remoteInfo = StackOverflow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F5EB86A0EFB10BF32674E63 /* libPods-StackOverflow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StackOverflow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D59DBBF11A93A24938900BA /* Pods-StackOverflow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackOverflow.release.xcconfig"; path = "Pods/Target Support Files/Pods-StackOverflow/Pods-StackOverflow.release.xcconfig"; sourceTree = "<group>"; };
+		A016A17DB3BAF5E8DB3B26F8 /* Pods-StackOverflow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackOverflow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StackOverflow/Pods-StackOverflow.debug.xcconfig"; sourceTree = "<group>"; };
+		CE73B7AC1B026C90000C5AE7 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		CE73B7AD1B026C90000C5AE7 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		CE73B7B21B026D69000C5AE7 /* OAuthWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthWebViewController.h; sourceTree = "<group>"; };
+		CE73B7B31B026D69000C5AE7 /* OAuthWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthWebViewController.m; sourceTree = "<group>"; };
+		CE73B7B51B02705E000C5AE7 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		CE73B7B61B02705E000C5AE7 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		CE73B7B81B02CFC0000C5AE7 /* StackOverflowService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackOverflowService.h; sourceTree = "<group>"; };
+		CE73B7B91B02CFC0000C5AE7 /* StackOverflowService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackOverflowService.m; sourceTree = "<group>"; };
+		CE73B7BC1B02D465000C5AE7 /* MainMenuDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainMenuDelegate.h; sourceTree = "<group>"; };
+		CE73B7BD1B02EB33000C5AE7 /* JSONStackoverflowParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONStackoverflowParser.h; sourceTree = "<group>"; };
+		CE73B7BE1B02EB33000C5AE7 /* JSONStackoverflowParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONStackoverflowParser.m; sourceTree = "<group>"; };
+		CE73B7C01B02EDAD000C5AE7 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		CE73B7C11B02EDAD000C5AE7 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		CE73B7C31B02EE7E000C5AE7 /* QuestionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionCell.xib; sourceTree = "<group>"; };
+		CE73B7C51B02F033000C5AE7 /* QuestionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionTableViewCell.h; sourceTree = "<group>"; };
+		CE73B7C61B02F033000C5AE7 /* QuestionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionTableViewCell.m; sourceTree = "<group>"; };
+		CE73B7C81B03370D000C5AE7 /* ImageResizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageResizer.h; sourceTree = "<group>"; };
+		CE73B7C91B03370D000C5AE7 /* ImageResizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageResizer.m; sourceTree = "<group>"; };
+		CE75EE621B01CBA90083CAA8 /* StackOverflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE75EE661B01CBA90083CAA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE75EE671B01CBA90083CAA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE75EE691B01CBA90083CAA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE75EE6A1B01CBA90083CAA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE75EE701B01CBA90083CAA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE75EE721B01CBA90083CAA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CE75EE751B01CBA90083CAA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CE75EE7B1B01CBA90083CAA8 /* StackOverflowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackOverflowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE75EE801B01CBA90083CAA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE75EE811B01CBA90083CAA8 /* StackOverflowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackOverflowTests.m; sourceTree = "<group>"; };
+		CE75EE8B1B01CC100083CAA8 /* MainMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuTableViewController.h; sourceTree = "<group>"; };
+		CE75EE8C1B01CC100083CAA8 /* MainMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuTableViewController.m; sourceTree = "<group>"; };
+		CE75EE901B01CD120083CAA8 /* MenuContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuContainerViewController.h; sourceTree = "<group>"; };
+		CE75EE911B01CD120083CAA8 /* MenuContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuContainerViewController.m; sourceTree = "<group>"; };
+		CE75EE931B01D0620083CAA8 /* MyQuestionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyQuestionsViewController.h; sourceTree = "<group>"; };
+		CE75EE941B01D0620083CAA8 /* MyQuestionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyQuestionsViewController.m; sourceTree = "<group>"; };
+		CE75EE961B01D0750083CAA8 /* SearchQuestionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchQuestionsViewController.h; sourceTree = "<group>"; };
+		CE75EE971B01D0750083CAA8 /* SearchQuestionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchQuestionsViewController.m; sourceTree = "<group>"; };
+		CE7B6C121B0471BB000D29A2 /* MyProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyProfileViewController.h; sourceTree = "<group>"; };
+		CE7B6C131B0471BB000D29A2 /* MyProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProfileViewController.m; sourceTree = "<group>"; };
+		CE7B6C151B04741D000D29A2 /* StackOverflowProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackOverflowProfile.h; sourceTree = "<group>"; };
+		CE7B6C161B04741D000D29A2 /* StackOverflowProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackOverflowProfile.m; sourceTree = "<group>"; };
+		CEDCF91D1B0570EF003C3F1F /* burgerButton@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "burgerButton@2x.jpg"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE75EE5F1B01CBA90083CAA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE83EE3B529459D8357F3686 /* libPods-StackOverflow.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE75EE781B01CBA90083CAA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD3D594E3E3AAFD9DFBA1DF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F5EB86A0EFB10BF32674E63 /* libPods-StackOverflow.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE73B7BB1B02CFCD000C5AE7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE73B7B81B02CFC0000C5AE7 /* StackOverflowService.h */,
+				CE73B7B91B02CFC0000C5AE7 /* StackOverflowService.m */,
+				CE73B7BD1B02EB33000C5AE7 /* JSONStackoverflowParser.h */,
+				CE73B7BE1B02EB33000C5AE7 /* JSONStackoverflowParser.m */,
+				CE73B7C81B03370D000C5AE7 /* ImageResizer.h */,
+				CE73B7C91B03370D000C5AE7 /* ImageResizer.m */,
+				CE73B7C01B02EDAD000C5AE7 /* Question.h */,
+				CE73B7C11B02EDAD000C5AE7 /* Question.m */,
+				CE7B6C151B04741D000D29A2 /* StackOverflowProfile.h */,
+				CE7B6C161B04741D000D29A2 /* StackOverflowProfile.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CE75EE591B01CBA80083CAA8 = {
+			isa = PBXGroup;
+			children = (
+				CE75EE641B01CBA90083CAA8 /* StackOverflow */,
+				CE75EE7E1B01CBA90083CAA8 /* StackOverflowTests */,
+				CE75EE631B01CBA90083CAA8 /* Products */,
+				E4F075936E358EC57CBE4C2D /* Pods */,
+				BD3D594E3E3AAFD9DFBA1DF6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE75EE631B01CBA90083CAA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE75EE621B01CBA90083CAA8 /* StackOverflow.app */,
+				CE75EE7B1B01CBA90083CAA8 /* StackOverflowTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE75EE641B01CBA90083CAA8 /* StackOverflow */ = {
+			isa = PBXGroup;
+			children = (
+				CE75EE721B01CBA90083CAA8 /* Images.xcassets */,
+				CE73B7B51B02705E000C5AE7 /* Constants.h */,
+				CE73B7B61B02705E000C5AE7 /* Constants.m */,
+				CE75EE691B01CBA90083CAA8 /* AppDelegate.h */,
+				CE75EE6A1B01CBA90083CAA8 /* AppDelegate.m */,
+				CE75EE6F1B01CBA90083CAA8 /* Main.storyboard */,
+				CE75EE8E1B01CC1D0083CAA8 /* View Controllers */,
+				CE73B7BB1B02CFCD000C5AE7 /* Models */,
+				CE75EE8F1B01CC500083CAA8 /* Views */,
+				CE75EE651B01CBA90083CAA8 /* Supporting Files */,
+			);
+			path = StackOverflow;
+			sourceTree = "<group>";
+		};
+		CE75EE651B01CBA90083CAA8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEDCF91D1B0570EF003C3F1F /* burgerButton@2x.jpg */,
+				CE75EE661B01CBA90083CAA8 /* Info.plist */,
+				CE75EE671B01CBA90083CAA8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE75EE7E1B01CBA90083CAA8 /* StackOverflowTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE75EE811B01CBA90083CAA8 /* StackOverflowTests.m */,
+				CE75EE7F1B01CBA90083CAA8 /* Supporting Files */,
+			);
+			path = StackOverflowTests;
+			sourceTree = "<group>";
+		};
+		CE75EE7F1B01CBA90083CAA8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE75EE801B01CBA90083CAA8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE75EE8E1B01CC1D0083CAA8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE7B6C121B0471BB000D29A2 /* MyProfileViewController.h */,
+				CE7B6C131B0471BB000D29A2 /* MyProfileViewController.m */,
+				CE75EE931B01D0620083CAA8 /* MyQuestionsViewController.h */,
+				CE75EE941B01D0620083CAA8 /* MyQuestionsViewController.m */,
+				CE75EE961B01D0750083CAA8 /* SearchQuestionsViewController.h */,
+				CE75EE971B01D0750083CAA8 /* SearchQuestionsViewController.m */,
+				CE73B7AC1B026C90000C5AE7 /* LoginViewController.h */,
+				CE73B7AD1B026C90000C5AE7 /* LoginViewController.m */,
+				CE73B7B21B026D69000C5AE7 /* OAuthWebViewController.h */,
+				CE73B7B31B026D69000C5AE7 /* OAuthWebViewController.m */,
+				CE75EE8B1B01CC100083CAA8 /* MainMenuTableViewController.h */,
+				CE75EE8C1B01CC100083CAA8 /* MainMenuTableViewController.m */,
+				CE73B7BC1B02D465000C5AE7 /* MainMenuDelegate.h */,
+				CE75EE901B01CD120083CAA8 /* MenuContainerViewController.h */,
+				CE75EE911B01CD120083CAA8 /* MenuContainerViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CE75EE8F1B01CC500083CAA8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE73B7C51B02F033000C5AE7 /* QuestionTableViewCell.h */,
+				CE73B7C61B02F033000C5AE7 /* QuestionTableViewCell.m */,
+				CE73B7C31B02EE7E000C5AE7 /* QuestionCell.xib */,
+				CE75EE741B01CBA90083CAA8 /* LaunchScreen.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E4F075936E358EC57CBE4C2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A016A17DB3BAF5E8DB3B26F8 /* Pods-StackOverflow.debug.xcconfig */,
+				7D59DBBF11A93A24938900BA /* Pods-StackOverflow.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE75EE611B01CBA90083CAA8 /* StackOverflow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE75EE851B01CBA90083CAA8 /* Build configuration list for PBXNativeTarget "StackOverflow" */;
+			buildPhases = (
+				F0BC07F4645B939372AECB4F /* Check Pods Manifest.lock */,
+				CE75EE5E1B01CBA90083CAA8 /* Sources */,
+				CE75EE5F1B01CBA90083CAA8 /* Frameworks */,
+				CE75EE601B01CBA90083CAA8 /* Resources */,
+				EF4F5682871A79A43E2AB7DC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StackOverflow;
+			productName = StackOverflow;
+			productReference = CE75EE621B01CBA90083CAA8 /* StackOverflow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE75EE7A1B01CBA90083CAA8 /* StackOverflowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE75EE881B01CBA90083CAA8 /* Build configuration list for PBXNativeTarget "StackOverflowTests" */;
+			buildPhases = (
+				CE75EE771B01CBA90083CAA8 /* Sources */,
+				CE75EE781B01CBA90083CAA8 /* Frameworks */,
+				CE75EE791B01CBA90083CAA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE75EE7D1B01CBA90083CAA8 /* PBXTargetDependency */,
+			);
+			name = StackOverflowTests;
+			productName = StackOverflowTests;
+			productReference = CE75EE7B1B01CBA90083CAA8 /* StackOverflowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE75EE5A1B01CBA80083CAA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Craig_Chaillie;
+				TargetAttributes = {
+					CE75EE611B01CBA90083CAA8 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					CE75EE7A1B01CBA90083CAA8 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = CE75EE611B01CBA90083CAA8;
+					};
+				};
+			};
+			buildConfigurationList = CE75EE5D1B01CBA80083CAA8 /* Build configuration list for PBXProject "StackOverflow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE75EE591B01CBA80083CAA8;
+			productRefGroup = CE75EE631B01CBA90083CAA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE75EE611B01CBA90083CAA8 /* StackOverflow */,
+				CE75EE7A1B01CBA90083CAA8 /* StackOverflowTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE75EE601B01CBA90083CAA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE75EE711B01CBA90083CAA8 /* Main.storyboard in Resources */,
+				CE73B7C41B02EE7E000C5AE7 /* QuestionCell.xib in Resources */,
+				CEDCF91E1B0570EF003C3F1F /* burgerButton@2x.jpg in Resources */,
+				CE75EE761B01CBA90083CAA8 /* LaunchScreen.xib in Resources */,
+				CE75EE731B01CBA90083CAA8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE75EE791B01CBA90083CAA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EF4F5682871A79A43E2AB7DC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StackOverflow/Pods-StackOverflow-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0BC07F4645B939372AECB4F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE75EE5E1B01CBA90083CAA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE75EE6B1B01CBA90083CAA8 /* AppDelegate.m in Sources */,
+				CE73B7B41B026D69000C5AE7 /* OAuthWebViewController.m in Sources */,
+				CE73B7BA1B02CFC0000C5AE7 /* StackOverflowService.m in Sources */,
+				CE75EE681B01CBA90083CAA8 /* main.m in Sources */,
+				CE75EE8D1B01CC100083CAA8 /* MainMenuTableViewController.m in Sources */,
+				CE75EE921B01CD120083CAA8 /* MenuContainerViewController.m in Sources */,
+				CE73B7AE1B026C90000C5AE7 /* LoginViewController.m in Sources */,
+				CE7B6C141B0471BB000D29A2 /* MyProfileViewController.m in Sources */,
+				CE73B7C71B02F033000C5AE7 /* QuestionTableViewCell.m in Sources */,
+				CE75EE981B01D0750083CAA8 /* SearchQuestionsViewController.m in Sources */,
+				CE73B7BF1B02EB33000C5AE7 /* JSONStackoverflowParser.m in Sources */,
+				CE73B7CA1B03370D000C5AE7 /* ImageResizer.m in Sources */,
+				CE7B6C171B04741D000D29A2 /* StackOverflowProfile.m in Sources */,
+				CE73B7C21B02EDAD000C5AE7 /* Question.m in Sources */,
+				CE75EE951B01D0620083CAA8 /* MyQuestionsViewController.m in Sources */,
+				CE73B7B71B02705E000C5AE7 /* Constants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE75EE771B01CBA90083CAA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE75EE821B01CBA90083CAA8 /* StackOverflowTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE75EE7D1B01CBA90083CAA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE75EE611B01CBA90083CAA8 /* StackOverflow */;
+			targetProxy = CE75EE7C1B01CBA90083CAA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE75EE6F1B01CBA90083CAA8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE75EE701B01CBA90083CAA8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE75EE741B01CBA90083CAA8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE75EE751B01CBA90083CAA8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE75EE831B01CBA90083CAA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE75EE841B01CBA90083CAA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE75EE861B01CBA90083CAA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A016A17DB3BAF5E8DB3B26F8 /* Pods-StackOverflow.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = StackOverflow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CE75EE871B01CBA90083CAA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D59DBBF11A93A24938900BA /* Pods-StackOverflow.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = StackOverflow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CE75EE891B01CBA90083CAA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = StackOverflowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StackOverflow.app/StackOverflow";
+			};
+			name = Debug;
+		};
+		CE75EE8A1B01CBA90083CAA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = StackOverflowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StackOverflow.app/StackOverflow";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE75EE5D1B01CBA80083CAA8 /* Build configuration list for PBXProject "StackOverflow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE75EE831B01CBA90083CAA8 /* Debug */,
+				CE75EE841B01CBA90083CAA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE75EE851B01CBA90083CAA8 /* Build configuration list for PBXNativeTarget "StackOverflow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE75EE861B01CBA90083CAA8 /* Debug */,
+				CE75EE871B01CBA90083CAA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE75EE881B01CBA90083CAA8 /* Build configuration list for PBXNativeTarget "StackOverflowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE75EE891B01CBA90083CAA8 /* Debug */,
+				CE75EE8A1B01CBA90083CAA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE75EE5A1B01CBA80083CAA8 /* Project object */;
+}
