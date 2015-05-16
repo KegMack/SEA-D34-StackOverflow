@@ -30,7 +30,6 @@
 -(void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
   NSURLRequest *request = navigationAction.request;
   NSURL *url = request.URL;
-  NSString *token = [[NSUserDefaults standardUserDefaults] objectForKey:kUserDefaultoAuthTokenKey];
   
   if ([url.description containsString:@"access_token"]) {
     NSArray *components = [[url description] componentsSeparatedByString:@"="];
